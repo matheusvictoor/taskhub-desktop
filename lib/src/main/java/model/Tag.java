@@ -63,7 +63,7 @@ public class Tag {
 		return updatedAt;
 	}
 
-	public void setUpdateAt(Date updateAt) {
-		this.updatedAt = updateAt;
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
 	}	
 }
