@@ -16,7 +16,7 @@ public class Tag {
 	private String name;
 	private String color;
 	private Date createdAt;
-	private Date updateAt;
+	private Date updatedAt;
 	
 	public Tag (String name, String color) {
 		this.name = name;
@@ -59,11 +59,11 @@ public class Tag {
 		this.createdAt = createdAt;
 	}
 
-	public Date getUpdateAt() {
-		return updateAt;
+	public Date getUpdatedAt() {
+		return updatedAt;
 	}
 
 	public void setUpdateAt(Date updateAt) {
-		this.updateAt = updateAt;
+		this.updatedAt = updateAt;
 	}	
 }
