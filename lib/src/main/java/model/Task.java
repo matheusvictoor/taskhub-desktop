@@ -22,10 +22,10 @@ public class Task {
 	private String notes;
 	private Date deadline;
 	private boolean completed;
-	private Date cratedAt;
-	private Date updateAt;
+	private Date createdAt;
+	private Date updatedAt;
 	
-	public Task(String name, String description, byte status, List<Tag> tags, String notes, Date deadline, boolean completed, Date cratedAt, Date updateAt) {
+	public Task(String name, String description, byte status, List<Tag> tags, String notes, Date deadline, boolean completed, Date createdAt, Date updatedAt) {
 		this.name = name;
 		this.description = description;
 		this.status = status;
@@ -33,14 +33,14 @@ public class Task {
 		this.notes = notes;
 		this.deadline = deadline;
 		this.completed = completed;
-		this.cratedAt = cratedAt;
-		this.updateAt = updateAt;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
 	}
 	
 	public Task () {
 		this.completed = false;
-		this.cratedAt = new Date();
-		this.updateAt = new Date();	
+		this.createdAt = new Date();
+		this.updatedAt = new Date();	
 	}
 		
 	public int getId() {
@@ -115,19 +115,24 @@ public class Task {
 		this.completed = completed;
 	}
 
-	public Date getCratedAt() {
-		return cratedAt;
+	public Date getCreatedAt() {
+		return createdAt;
 	}
 
-	public void setCratedAt(Date cratedAt) {
-		this.cratedAt = cratedAt;
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
 	}
 
-	public Date getUpdateAt() {
-		return updateAt;
+	public Date getUpdatedAt() {
+		return updatedAt;
 	}
 
-	public void setUpdateAt(Date updateAt) {
-		this.updateAt = updateAt;
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
+	@Override
+	public String toString() {
+		return this.name;
 	}
 }
