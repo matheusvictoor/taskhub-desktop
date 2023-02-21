@@ -24,7 +24,8 @@ public class Tag {
 	}
 	
 	public Tag () {
-
+		this.createdAt = new Date();
+		this.updatedAt = new Date();
 	}
 
 	public int getId() {
@@ -65,5 +66,10 @@ public class Tag {
 
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	@Override
+	public String toString() {
+		return this.name;
 	}	
 }
