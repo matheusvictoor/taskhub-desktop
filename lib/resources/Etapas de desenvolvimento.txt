@@ -1,0 +1,21 @@
+To Do List
+
+Descrição das etapas de desenvolvimento do projeto TaskHub:
+
+O projeto visa desenvolver uma aplicação de para o gerenciamento de listas de tarefas
+
+
+1 - Criação do banco de dados
+2 - Criação das classes de modelo
+3 - Criação da classe de conexão com o banco de dados
+4 - Criação das classes de controller
+5 - Criação da interface gráfica
+    5.1 - Criação da tela principal
+	5.1.1 - Criação do CellRenderer prazo
+	5.1.2 - Criação do CellRenderer editar e deletar
+    5.2 - Criação da tela de cadastro de Projetos
+    5.3 - Criação da tela de cadastro de Tarefas
+6 - Implementação dos eventos
+    6.1 - Validações
+7 - Ajustes finais
+8 - Teste de aplicação 
